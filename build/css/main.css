@@ -1,4 +1,8 @@
-@import url(estilos.css?t=1565737166600);
+@import url(estilos.css?t=1565820217739);
+@import url(responsivo.css?t=1565820217739);
+@import url(owl.theme.default.min.css?t=1565820217739);
+@import url(grid-modificado.css?t=1565820217739);
+@import url(all.min.css?t=1565820217739);
 .loadingmask-message {
   background: transparent;
   border-width: 0;
@@ -3262,5 +3266,11 @@ input.switch:empty ~ .switch-bar:after, input.switch:empty ~ .switch-bar:before,
 
 .barra-utilerias .usuario {
   top: -15px; }
+
+form.form-inline.d-inline-block.busqueda {
+  top: 10px; }
+
+.lista-menu-inline li {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
