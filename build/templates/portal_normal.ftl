@@ -12,6 +12,8 @@
 
 	<title>${the_title} - ${company_name}</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800|Source+Sans+Pro:300,400,700|Work+Sans:300,400,500,600,700,800&display=swap" rel="stylesheet">
+
 	<@liferay_util["include"] page=top_head_include />
 
 </head>
@@ -25,7 +27,7 @@
 	<@liferay.control_menu />
 
 	<div id="wrapper">
-		<section class="seccion-contenedor" data-version="10">
+		<section class="seccion-contenedor">
 
 			<header id="banner" role="banner">
 				<div id="heading">
