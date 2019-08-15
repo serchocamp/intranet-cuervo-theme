@@ -1,4 +1,4 @@
-.body-contenedor {
+body {
 	background: #181818;
 	color: #FFF;
 	font-size: 16px;
@@ -6,11 +6,11 @@
 	font-weight: 300;
 }
 
-.body-contenedor a {
+a {
 	color: #FFF;
 }
 
-.body-contenedor a:hover {
+a:hover {
 	color: #FFF;
 	opacity: 0.3;
 }
@@ -47,59 +47,10 @@
 	line-height: 24px;
 	margin-right: 30px;
 }
-.barra-utilerias .dropdown-menu {
-	background-color: #262626;
-	border-radius: 0;
-	margin-top: 15px;
-	min-width: 350px;
-	padding: 15px;
-}
-
-.dropdown-toggle::after {
-    display: none;
-}
-
-.usuario-titulo {
-	color: #FFF;
-	font-family: "Work Sans";
-	font-size: 12px;
-	font-weight: 800;
-	line-height: 16px;
-	margin-bottom: 0;
-	opacity: 0.5;
-}
-
-.usuario-texto {
-	color: #FFF;
-	font-family: "Work Sans";
-	font-size: 24px;
-	font-weight: 300;
-	line-height: 28px;
-	min-height: 32px;
-	
-}
 
 .utileria-usuario {
 	display: none;
 }
-
-.usuario .flechaArriba {
-	display: inline-block;
-}
-
-.usuario .flechaAbajo {
-	display: none;
-}
-
-.usuario.collapsed .flechaArriba {
-	display: none;
-}
-
-.usuario.collapsed .flechaAbajo {
-	display: inline-block;
-}
-
-
 
 .barra-utilerias .busqueda {
 	position: relative;
@@ -115,7 +66,6 @@
 
 .barra-utilerias .buscar {
 	background: transparent;
-	border-radius: 0;
 	box-sizing: border-box;
 	color: #FFF;
 	height: 50px;
@@ -129,17 +79,10 @@
 }
 
 .utilerias {
+	display: none;
 	margin-right: 55px;
 }
 
-.link-cerrarSesion {
-	color: #CCB874;
-}
-
-.link-cerrarSesion .fas {
-	margin-left: 10px;
-	margin-top: 15px;
-}
 /* Menu de hambuerguesa */
 .barra-utilerias .fa-bars {
 	color: #CCB874;
@@ -162,10 +105,6 @@
 	font-family: "Work Sans";
 	font-size: 16px;
 	line-height: 24px;
-}
-
-.menu-principal .nav-link .fas {
-	color: #CCB874;
 }
 
 .menu-principal .navbar {
@@ -251,6 +190,10 @@
 .contenedor-imagenPrincipal {
 	height: 440px;
 	overflow: hidden;
+}
+
+.contenedor-imagenPrincipal img {
+	width: 100%;
 }
 
 .contenedor-imagenPrincipal .contenedor-texto {
@@ -399,6 +342,9 @@
 }
 
 .area-contenedor {
+	background-size: cover;
+	background-origin: content-box;
+	background-clip: content-box;
 	height: 340px;
 	overflow: hidden;
 	width: 100%;
@@ -567,30 +513,6 @@
 	text-align: center;
 }
 
-	/*Politicas y procedimientos*/
-.input-politicas-busqueda {
-	min-width: 362px;
-}
-
-.politicas-resultados-icono {
-	color: #000;
-	font-size: 14px;
-	line-height: 32px;
-	margin-left: 25px;
-}
-
-.politicas-resultados-label {
-	color: #FFF;
-	font-family: "Source Sans Pro";
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 32px;
-}
-
-.columna-archivo {
-	width: 65% !important;
-
-}
 
 /* Estilos del carrusel */
 
@@ -632,19 +554,13 @@
 	border-bottom: 1px solid #9a9a9a;
 }
 
-.tituloSeccion-contenedor {
-	position: relative;
-	min-height: 140px;
-}
-
 .tituloSeccion {
 	color: #FFF;
 	font-family: "Work Sans";
 	font-size: 48px;
 	font-weight: 800;
-	line-height: 57px;
+	line-height: 140px;
 	text-align: center;
-	position: relative;
 }
 
 .titulon0 {
@@ -817,38 +733,6 @@
 	color: #CCB874;
 }
 
-/* Tablas */
-.tabla thead th {
-	border-bottom: none;
-	border-top: none;
-	color: #FFF;
-	font-size: 14px;
-	font-family: "Work Sans";
-	font-weight: 600;
-	line-height: 40px;
-}
-
-.tabla thead th .fas {
-	margin-left: 15px;
-}
-
-.tabla td {
-	font-family: "Source Sans Pro";
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 23px;
-	height: 56px;
-}
-
-.tabla.table-hover tbody tr:hover {
-	color: #FFF;
-	background-color: #262626;
-}
-
-.tabla td {
-	border-top: 1px solid #979797;
-}
-
 .fs-18 {
 	font-size: 18px;
 }
@@ -929,27 +813,6 @@
 
 /* FORMULARIOS */
 
-.formulario label {
-	color: #CCB874;
-	font-family: "Work Sans";
-	font-size: 14px;
-	line-height: 24px;
-	margin-bottom: 10px;
-}
-
-.formulario .form-control {
-	background: transparent;
-	border-radius: 0;
-	color: #CCB874;
-	border-radius: 0;
-	border-color: #CCB874;
-	font-family: "Work Sans";
-	font-weight: 600;
-	font-size: 18px;
-	height: 32px;
-	padding: 0 30px 0 16px;
-}
-
 .formulario .custom-select {
 	background: transparent;
 	color: #CCB874;
@@ -975,46 +838,6 @@
 }
 
 
-.formulario-xl .form-control,
-.formulario-xl .custom-select {
-	color: #CCB874;
-	font-weight: 500;
-	height: 50px;
-	font-size: 16px;
-	line-height: 50px;
-}
-
-.formulario-xl .fa-stack.clasificados-icon {
-	font-size: 50px;
-	height: 50px;
-	width: 50px;
-	line-height: 50px;
-}
-
-.formulario-xl .formulario-select .fas {
-	top: 18px;
-}
-
-.campo-blanco .fas,
-.campo-blanco .custom-select {
-	border-color: #FFF;
-	color: #FFF;
-
-}
-
-.form-control::-webkit-input-placeholder { /* Edge */
-	opacity: 0.5;
-}
-
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  opacity: 0.5;
-}
-
-.form-control::placeholder {
-  opacity: 0.5;
-}
-
-
 /* Utilerias */
 .mascara-gradiente {
 	background-image: linear-gradient(to right, rgba(0,0,0,1) 35%,rgba(0,0,0,0) 100%);
@@ -1027,15 +850,6 @@
 
 .mascara-negra {
 	background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.mascara-tituloSeccion {
-	background: rgba(0,0,0,0.3);
 	position: absolute;
 	top: 0;
 	left: 0;

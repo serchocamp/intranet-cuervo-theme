@@ -74,6 +74,7 @@
 	    padding: 0;
 	}
 
+<<<<<<< HEAD
 	/* Nuestras marcas */
 
 	.img-hoverSize {
@@ -101,10 +102,16 @@
 		height: auto;
 	}
 
+=======
+}
+
+@media (max-width: 768px) {
+>>>>>>> developer
 	.area {
 		margin-bottom: 40px;
 	}
 
+<<<<<<< HEAD
 	/* Home */
 	.contenedor-imagenPrincipal {
 		height: 540px;
@@ -121,6 +128,8 @@
 		width: 100%;
 	}
 
+=======
+>>>>>>> developer
 	.aviso {
 		max-width: 350px;
 	}
@@ -141,6 +150,7 @@
 	.main-timeline .timeline.year:nth-child(even) p{
 	    margin: 65px 0 25px -40px;
 	}
+<<<<<<< HEAD
 
 	/* Politicas */
 	.select-area {
@@ -180,4 +190,6 @@
 		line-height: 32px;
 	}
 
+=======
+>>>>>>> developer
 }

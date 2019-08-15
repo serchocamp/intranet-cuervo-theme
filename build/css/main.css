@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 @import url(estilos.css?t=1565878817115);
 @import url(grid-modificado.css?t=1565878817115);
 @import url(responsivo.css?t=1565878817115);
 @import url(font-awesome.all.min.css?t=1565878817115);
 @import url(owl.carousel.min.css?t=1565878817115);
 @import url(owl.theme.default.min.css?t=1565878817115);
+=======
+@import url(estilos.css?t=1565820217739);
+@import url(responsivo.css?t=1565820217739);
+@import url(owl.theme.default.min.css?t=1565820217739);
+@import url(grid-modificado.css?t=1565820217739);
+@import url(all.min.css?t=1565820217739);
+>>>>>>> developer
 .loadingmask-message {
   background: transparent;
   border-width: 0;
@@ -3221,5 +3229,57 @@ input.switch:empty ~ .switch-bar:after, input.switch:empty ~ .switch-bar:before,
 /* inject:imports */
 /* endinject */
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+#wrapper {
+  padding-top: 0; }
+
+.portlet-title-text {
+  display: none; }
+
+.form-inline .form-group {
+  display: inline-block; }
+
+.form-group.form-group-inline.input-text-wrapper > .search-input {
+  background: transparent;
+  box-sizing: border-box;
+  color: #FFF;
+  height: 50px;
+  width: 242px;
+  border: 1px solid #CCB874;
+  margin-top: -5px; }
+
+.portlet-boundary .portlet-boundary_com_liferay_portal_search_web_portlet_SearchPortlet_ > .portlet-decorate .portlet-content {
+  background: transparent; }
+
+.lexicon-icon.lexicon-icon-search {
+  color: #CCB874;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.portlet-boundary_com_liferay_portal_search_web_portlet_SearchPortlet_ .btn-light:disabled {
+  color: #212529;
+  background-color: transparent;
+  border-color: transparent; }
+
+.portlet-decorate .portlet-content {
+  background: transparent; }
+
+.lfr-ddm-field-group-inline {
+  display: inline-block;
+  vertical-align: bottom;
+  position: absolute;
+  float: right;
+  right: 5%;
+  top: 26%; }
+
+.barra-utilerias .usuario {
+  top: -15px; }
+
+form.form-inline.d-inline-block.busqueda {
+  top: 10px; }
+
+.lista-menu-inline li {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
