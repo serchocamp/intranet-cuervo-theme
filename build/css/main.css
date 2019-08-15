@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-@import url(estilos.css?t=1565878817115);
-@import url(grid-modificado.css?t=1565878817115);
-@import url(responsivo.css?t=1565878817115);
-@import url(font-awesome.all.min.css?t=1565878817115);
-@import url(owl.carousel.min.css?t=1565878817115);
-@import url(owl.theme.default.min.css?t=1565878817115);
-=======
-@import url(estilos.css?t=1565820217739);
-@import url(responsivo.css?t=1565820217739);
-@import url(owl.theme.default.min.css?t=1565820217739);
-@import url(grid-modificado.css?t=1565820217739);
-@import url(all.min.css?t=1565820217739);
->>>>>>> developer
+@import url(estilos.css?t=1565884828416);
+@import url(grid-modificado.css?t=1565884828416);
+@import url(responsivo.css?t=1565884828416);
+@import url(font-awesome.all.min.css?t=1565884828416);
+@import url(owl.carousel.min.css?t=1565884828416);
+@import url(owl.theme.default.min.css?t=1565884828416);
 .loadingmask-message {
   background: transparent;
   border-width: 0;

@@ -1,4 +1,4 @@
-.body-contenedor {
+.seccion-contenedor {
 	background: #181818;
 	color: #FFF;
 	font-size: 16px;
@@ -6,11 +6,11 @@
 	font-weight: 300;
 }
 
-.body-contenedor a {
+.seccion-contenedor a {
 	color: #FFF;
 }
 
-.body-contenedor a:hover {
+.seccion-contenedor a:hover {
 	color: #FFF;
 	opacity: 0.3;
 }

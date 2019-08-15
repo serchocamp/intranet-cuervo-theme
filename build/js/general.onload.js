@@ -25,7 +25,6 @@ $(document).ready(function(){
 
 
     $('#selectSeccion').on('change', function (e) {
-<<<<<<< HEAD
         e.preventDefault();
         var id = $(this).val();
         var ocultar = $( '.tab-pane' ).find( 'show' );
@@ -37,15 +36,6 @@ $(document).ready(function(){
         alert(ocultar);
         $('#' + id).tab('show');       
       
-=======
-        e.preventDefault()
-        /*var id = $(this).val();
-        alert(id);
-        $('#selectSeccion a[href="#pills-seccion1"]').tab('show')*/
-        $('#pills-seccion1').tab('show');
-        alert("llego");
-
->>>>>>> developer
 
     });
 
