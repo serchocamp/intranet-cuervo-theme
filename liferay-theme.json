@@ -5,7 +5,7 @@
     "deployPath": "C:\\liferay-dxp-7.2.10-ga1\\deploy",
     "url": "http://localhost:8080",
     "appServerPathPlugin": "C:\\liferay-dxp-7.2.10-ga1\\tomcat-9.0.17\\webapps\\intranet-cuervo-theme",
-    "deployed": false,
+    "deployed": true,
     "pluginName": "intranet-cuervo-theme"
   }
 }
