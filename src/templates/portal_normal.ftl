@@ -71,8 +71,30 @@
 			                            <a href="#">
 			                                <i class="fas fa-search"></i>
 			                            </a>
+			                            <@liferay.search />
+
+			                            <@liferay_portlet["runtime"]
+			portletProviderAction=portletProviderAction.VIEW
+			portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
+		/>
+			<@liferay.search_bar />
+			<@liferay_portlet["runtime"]
+  			portletProviderAction=portletProviderAction.VIEW
+			portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
+		/>
+
+		<iframe frameborder="0" height="100%" src="http://localhost:8080/widget/web/navegacion/nosotros/-/com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_2XrdEmlT5mXO" width="100%"></iframe>
 			                        -->
-			                        	<@liferay.search />
+ <#if !is_signed_in>
+ <#else>
+<!--
+            <@liferay_portlet["runtime"]
+  			portletProviderAction=portletProviderAction.VIEW
+			portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
+		/>  
+		-->	
+  </#if>
+	
 
 			                        </form>
 			                    </div>
@@ -112,70 +134,7 @@
 				</p>
 			</footer>
 			-->
-			<footer id="footer" role="contentinfo" class="piePagina mt-50">
-                <div class="container">
-                    <div class="row franja-logo">
-                        <div class="col-md-12 piePagina-logo text-lg-left">
-                            <img src="img/logotipo.png" alt="" class="img-fluid logotipo">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-lg-3">
-                            <h4 class="titulo">Ciudad de México</h4>
-                            <p>
-                                Guillermo Gonzales Camarena No. 800-4<br>
-                                 Alvaro Obregon, Santa Fe, CP 01210<br>
-                                 México City, México
-                            </p>
-                            <p>
-                                55 5258 7000<br>
-                                correo@cuervo.com
-                            </p>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <h4 class="titulo">Guadalajara</h4>
-                            <p>
-                                Guillermo Gonzales Camarena No. 800-4<br>
-                                 Alvaro Obregon, Santa Fe, CP 01210<br>
-                                 México City, México
-                            </p>
-                            <p>
-                                55 5258 7000<br>
-                                correo@cuervo.com
-                            </p>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <h4 class="titulo">Monterrey</h4>
-                            <p>
-                                Guillermo Gonzales Camarena No. 800-4<br>
-                                 Alvaro Obregon, Santa Fe, CP 01210<br>
-                                 México City, México
-                            </p>
-                            <p>
-                                55 5258 7000<br>
-                                correo@cuervo.com
-                            </p>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <h4 class="titulo">Tijuana</h4>
-                            <p>
-                                Guillermo Gonzales Camarena No. 800-4<br>
-                                 Alvaro Obregon, Santa Fe, CP 01210<br>
-                                 México City, México
-                            </p>
-                            <p>
-                                55 5258 7000<br>
-                                correo@cuervo.com
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row copyright text-lg-left">
-                        <div class="col-md-12">
-                            <p>© Copyright 2019 Tequila Cuervo La Rojeña, S.A. de C.V.</p>
-                        </div>
-                    </div>
-                </div>            
-            </footer>
+			
 
 		</section>
 	</div>
