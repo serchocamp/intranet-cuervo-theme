@@ -6,13 +6,25 @@
 	font-weight: 300;
 }
 
+.fragments-editor-sidebar {
+    color: #212529;
+}
+
 .seccion-contenedor a {
-	color: #FFF;
+    color: #FFF;
+}
+
+.fragments-editor-sidebar a {
+    color: #007bff;
 }
 
 .seccion-contenedor a:hover {
-	color: #FFF;
-	opacity: 0.3;
+    color: #FFF;
+    opacity: .3
+}
+
+.fragments-editor-sidebar a:hover {
+    color: #0056b3;
 }
 
 /* ESTILOS DE TEMPLATE */
