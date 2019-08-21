@@ -101,9 +101,9 @@
             <div class="row mt-25 mb-50">
                 <div class="col-lg-10 offset-lg-1">
                     <p class="titulon2 subtitlulo-submenu text-center mb-25">${nav_item.getName()}</p>
-
+					<div class="row">
                 	<ul class="lista-menu-inline">
-                		<div class="row">
+                		
 	                  		<#list nav_item.getChildren() as nav_child>
 	                            <#assign
 	                                nav_child_attr_selected = ""
@@ -161,8 +161,9 @@
 	                    	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 	                    
 	                        </#list>
-	                 	</div>
+	                 	
 	                </ul>
+	               </div>
 	            </div>
             </div>
         </div>
