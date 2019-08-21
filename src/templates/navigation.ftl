@@ -121,7 +121,7 @@
 
 	  							<#if nav_child.hasChildren()>
 	 
-	              					<div class="col-lg-2">
+	              					<div class="col-lg-3">
 
 	              						<p class="subtitlulo-submenu text-center">${nav_child.getName()}</p>
 	             
