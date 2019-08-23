@@ -100,70 +100,71 @@
   		<div class="container collapse" id="a${nav_item.getLayoutId()}" data-parent="#menuDesplegable">
             <div class="row mt-25 mb-50">
                 <div class="col-lg-10 offset-lg-1">
+                    
                     <p class="titulon2 subtitlulo-submenu text-center mb-25">${nav_item.getName()}</p>
-					<div class="row">
-                	<ul class="lista-menu-inline">
-                		
-	                  		<#list nav_item.getChildren() as nav_child>
+
+                    <div class="row">
+
+	              		<#list nav_item.getChildren() as nav_child>
+
+	                        <#assign
+	                            nav_child_attr_selected = ""
+	                            nav_child_css_class = ""
+	                        />
+
+	                        <#if nav_item.isSelected()>
 	                            <#assign
-	                                nav_child_attr_selected = ""
-	                                nav_child_css_class = ""
+	                                nav_child_attr_selected = "aria-selected='true'"
+	                                nav_child_css_class = "selected"
 	                            />
+	                        </#if>
+                            
+                		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+                			<div class="col-lg-3">
 
-	                            <#if nav_item.isSelected()>
-	                                <#assign
-	                                    nav_child_attr_selected = "aria-selected='true'"
-	                                    nav_child_css_class = "selected"
-	                                />
-	                            </#if>
-	                                
-	                    	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+							<#if nav_child.hasChildren()>
 
-	  							<#if nav_child.hasChildren()>
-	 
-	              					<div class="col-lg-3">
+          						<p class="subtitlulo-submenu text-center">${nav_child.getName()}</p>
+         
+            					<ul class="lista-menu">
+			  					
+				  					<#list nav_child.getChildren() as nav_grandchild>
+							            <#assign
+											nav_grandchild_attr_selected = ""
+											nav_grandchild_css_class = ""
+										/>
 
-	              						<p class="subtitlulo-submenu text-center">${nav_child.getName()}</p>
-	             
-	                					<ul class="lista-menu">
-					  					
-						  					<#list nav_child.getChildren() as nav_grandchild>
-									            <#assign
-													nav_grandchild_attr_selected = ""
-													nav_grandchild_css_class = ""
-												/>
+										<#if nav_grandchild.isSelected()>
+											<#assign
+												nav_grandchild_attr_selected = "aria-selected='true'"
+												nav_grandchild_css_class = "active"
+											/>
+										</#if>
 
-												<#if nav_grandchild.isSelected()>
-													<#assign
-														nav_grandchild_attr_selected = "aria-selected='true'"
-														nav_grandchild_css_class = "active"
-													/>
-												</#if>
+										<li ${nav_grandchild_attr_selected} id="layout_${nav_grandchild.getLayoutId()}" role="presentation">
+											<a aria-labelledby="layout_${nav_grandchild.getLayoutId()}" href="${nav_grandchild.getURL()}" ${x} ${nav_grandchild.getTarget()} role="menuitem">
+												${nav_grandchild.getName()}
+											</a>
+										</li>
+							    	</#list>
 
-												<li ${nav_grandchild_attr_selected} id="layout_${nav_grandchild.getLayoutId()}" role="presentation">
-													<a aria-labelledby="layout_${nav_grandchild.getLayoutId()}" href="${nav_grandchild.getURL()}" ${x} ${nav_grandchild.getTarget()} role="menuitem">
-														${nav_grandchild.getName()}
-													</a>
-												</li>
-									    	</#list>
+               					</ul>
+                            
+				            <#else>       
+				            	<span ${nav_child_attr_selected} class="${nav_child_css_class} menu-item" id="layout_${nav_child.getLayoutId()}" role="presentation">
+									<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
+										${nav_child.getName()}
+									</a>
+								</span>
+				            </#if>
 
-	                   					</ul>
-	                  				</div> 
-	                                
-					            <#else>       
-					            	<li ${nav_child_attr_selected} class="${nav_child_css_class} menu-item" id="layout_${nav_child.getLayoutId()}" role="presentation">
-										<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
-											${nav_child.getName()}
-										</a>
-									</li>
-					            </#if> 
-	                    
-	                    	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-	                    
-	                        </#list>
-	                 	
-	                </ul>
-	               </div>
+			            	</div>
+                
+                	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                
+                    	</#list>
+                    </div>
+
 	            </div>
             </div>
         </div>
