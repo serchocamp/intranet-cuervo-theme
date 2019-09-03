@@ -31,21 +31,7 @@
 
 			<header id="banner" role="banner">
 				<div id="heading">
-				<!--
-				<h1 class="site-title">
-					<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-						<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-					</a>
-
-					<#if show_site_name>
-						<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-							${site_name}
-						</span>
-					</#if>
-				</h1>
-				-->
-
-	            	<div class="barra-utilerias">
+			     	<div class="barra-utilerias">
 		            	<div class="container">
 			                <nav class="navbar navbar-dark">
 			                    <a href="${site_default_url}">
@@ -67,33 +53,13 @@
 									</#if>
 			                        
 			                        <form class="form-inline d-inline-block busqueda">
-			                         <!--   <input class="form-control buscar" type="text" placeholder="Buscar" aria-label="Buscar">
-			                            <a href="#">
-			                                <i class="fas fa-search"></i>
-			                            </a>
-			                            <@liferay.search />
+			                        
+									 <#if !is_signed_in>
+									 <#else>
 
-			                            <@liferay_portlet["runtime"]
-			portletProviderAction=portletProviderAction.VIEW
-			portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
-		/>
-			<@liferay.search_bar />
-			<@liferay_portlet["runtime"]
-  			portletProviderAction=portletProviderAction.VIEW
-			portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
-		/>
-
-		<iframe frameborder="0" height="100%" src="http://localhost:8080/widget/web/navegacion/nosotros/-/com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_2XrdEmlT5mXO" width="100%"></iframe>
-			                        -->
- <#if !is_signed_in>
- <#else>
-<!--
-            <@liferay_portlet["runtime"]
-  			portletProviderAction=portletProviderAction.VIEW
-			portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
-		/>  
-		-->	
-  </#if>
+									      <!--  <@liferay.search_bar />-->
+											
+									  </#if>
 	
 
 			                        </form>
@@ -146,7 +112,7 @@
 	<script src="${javascript_folder}/popper.min.js" type="text/javascript"></script>
 	<script src="${javascript_folder}/owl.carousel.min.js" type="text/javascript"></script>
 	<script src="${javascript_folder}/general.onload.js" type="text/javascript"></script>
-	<!--<script src="${javascript_folder}/bootstrap.min.js" type="text/javascript"></script>-->
+	<script src="${javascript_folder}/datatable.min.js" type="text/javascript"></script>
 
 </body>
 
