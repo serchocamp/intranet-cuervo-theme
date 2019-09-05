@@ -93,13 +93,7 @@
 					</@>
 				</#if>
 			</section>
-			<!--
-			<footer id="footer" role="contentinfo">
-				<p class="powered-by">
-					<@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
-				</p>
-			</footer>
-			-->
+			
 			
 
 		</section>
@@ -112,7 +106,7 @@
 	<script src="${javascript_folder}/popper.min.js" type="text/javascript"></script>
 	<script src="${javascript_folder}/owl.carousel.min.js" type="text/javascript"></script>
 	<script src="${javascript_folder}/general.onload.js" type="text/javascript"></script>
-	<script src="${javascript_folder}/datatable.min.js" type="text/javascript"></script>
+	
 
 </body>
 
