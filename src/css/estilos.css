@@ -303,10 +303,10 @@
 }
 
 .bloque {
-	background: #262626;
-	color: #FFF;
-	height: 100%;
-	padding: 16px 24px;
+    background: #262626;
+    color: #FFF;
+    height: 500px;
+    padding: 16px 24px;
 }
 
 .bloque-btn {
@@ -1118,3 +1118,16 @@
 	transform: scale(1.3);
 	border-bottom: 3px solid #CCB874;
 }
+
+
+@media (max-width: 767px) { 
+
+
+
+.bloque {
+   
+    height: auto;
+
+		}
+ }
+
