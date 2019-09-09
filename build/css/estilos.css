@@ -305,7 +305,7 @@
 .bloque {
     background: #262626;
     color: #FFF;
-    height: 500px;
+    height: 380px;
     padding: 16px 24px;
 }
 
@@ -1119,15 +1119,4 @@
 	border-bottom: 3px solid #CCB874;
 }
 
-
-@media (max-width: 767px) { 
-
-
-
-.bloque {
-   
-    height: auto;
-
-		}
- }
 

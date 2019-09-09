@@ -93,6 +93,12 @@
 		transform: scale(1);
 		border-bottom: 3px solid #CCB874;
 	}
+/* clase clasificados-img ocultar imagen */
+	.clasificado-img.col-lg-6{
+		display: none;
+	
+
+	}
 
 }
 
@@ -159,6 +165,8 @@
 	.p-md-absolute {
 		position: absolute;
 	}
+
+
 }
 
 @media (max-width: 576px) {
