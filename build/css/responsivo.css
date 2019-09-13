@@ -10,7 +10,8 @@
 	}
 
 	.img-fluid-lg {
-		max-width: none;
+		max-width: none !important;
+		height: 100% !important;
 	}
 
 	.aviso-lg {
