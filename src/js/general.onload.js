@@ -1,28 +1,34 @@
 /* Inicializacion del carrusel */
 $(document).ready(function(){
-  	$('.owl-carousel').owlCarousel({
-  	    loop:true,
-  	    margin:25,
-  	    dots:false,
-  	    navText: [ '<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>' ],
-  	    responsiveClass:true,
-  	    responsive:{
-  	        0:{
-  	            items:1,
-  	            nav:true
-  	        },
-  	        600:{
-  	            items:3,
-  	            nav:false
-  	        },
-  	        1000:{
-  	            items:5,
-  	            nav:true,
-  	            loop:false
-  	        }
-  	    }
-  	})
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:25,
+        dots:false,
+        navText: [ '<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>' ],
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
+    })
 });
+
+/* Inicializacion de popvers */
+$(document).ready(function(){
+  $('.info').popover();
+});
+
 
 /* NUESTRAS MARCAS */
 $(document).ready(function(){
@@ -68,4 +74,18 @@ $(document).ready(function(){
         $('.tab-pane').removeClass('active show');
         $('#' + id).tab('show');             
     });
+});
+
+/* CLASIFICADOS FUNCIONALIDADES*/
+$(document).ready(function(){
+
+    $('.info').on('click', function (e) {
+      var contenedor = $(this).parents(".clasificado-parent");
+      contenedor.find(".aviso-detalles").slideDown();
+    })  
+
+    $('.cerrarAviso').on('click', function (e) {
+      $(this).parent().slideUp();
+    })
+    
 });
