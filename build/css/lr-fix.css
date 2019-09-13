@@ -17,3 +17,24 @@
 .fragments-editor-toolbar button.btn-secondary {
     color: #ffffff !important
 }
+
+
+/* Panel lateral (filtros) */
+.panel-title .collapse-icon {
+  color: #212529;
+}
+
+.panel-title 
+.collapse-icon:hover,
+.panel-title .collapse-icon:focus {
+  color: #212529;
+  opacity: .6;
+}
+
+.seccion-contenedor .form {
+  color: #212529;
+}
+
+.facet-value a {
+  color: #212529;
+}
