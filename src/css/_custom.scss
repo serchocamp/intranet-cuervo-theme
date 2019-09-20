@@ -35,7 +35,16 @@
     display: block;
 }
 
+/*  -------portletlayoutrow ----*/
 
+.portlet-layout.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+#column-1 {
+    padding-right: 0;
+    padding-left: 0;
+}
 
 /*------portlet de busqueda ----------*/
 

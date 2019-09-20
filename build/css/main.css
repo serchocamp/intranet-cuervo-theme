@@ -1,13 +1,11 @@
-
-@import url(estilos.css?t=1568392241982);
-@import url(lr-fix.css?t=1568392241982);
-@import url(grid-modificado.css?t=1568392241982);
-@import url(responsivo.css?t=1568392241982);
-@import url(font-awesome.all.min.css?t=1568392241982);
-@import url(owl.carousel.min.css?t=1568392241982);
-@import url(owl.theme.default.min.css?t=1568392241982);
-@import url(datatable.css?t=1568392241982);
-
+@import url(estilos.css?t=1569018966445);
+@import url(lr-fix.css?t=1569018966445);
+@import url(grid-modificado.css?t=1569018966445);
+@import url(responsivo.css?t=1569018966445);
+@import url(font-awesome.all.min.css?t=1569018966445);
+@import url(owl.carousel.min.css?t=1569018966445);
+@import url(owl.theme.default.min.css?t=1569018966445);
+@import url(datatable.css?t=1569018966445);
 .loadingmask-message {
   background: transparent;
   border-width: 0;
@@ -3246,6 +3244,15 @@ input.switch:empty ~ .switch-bar:after, input.switch:empty ~ .switch-bar:before,
 
 .lista-menu-inline li {
   display: block; }
+
+/*  -------portletlayoutrow ----*/
+.portlet-layout.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+#column-1 {
+  padding-right: 0;
+  padding-left: 0; }
 
 /*------portlet de busqueda ----------*/
 
