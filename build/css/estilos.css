@@ -4,6 +4,7 @@
 	font-size: 16px;
 	font-family: "Source Sans Pro";
 	font-weight: 300;
+	overflow: hidden; 
 }
 
 .seccion-contenedor a {
@@ -251,6 +252,17 @@
 
 
 /* COMPONENETES PRINCIPALES */
+#carrusel-banner .carousel-indicators {
+	bottom: 20px;
+}
+
+#carrusel-banner .carousel-indicators li {
+	background-color: #000;
+	border: 1px solid #CCB874;
+	height: 10px;
+	width: 35px;
+
+}
 
 .contenedor-imagenPrincipal {
 	height: 440px;
@@ -374,7 +386,8 @@
     transform: translate(0,100%);
 }
 
-.aviso-detalles {
+.aviso-detalles,
+.aviso-detalles-usuario {
 	background: #000;
 	display: none;
 	height: 100%;
@@ -385,7 +398,8 @@
 	width: calc(100% - 30px);
 }
 
-.aviso-detalles .cerrarAviso {
+.aviso-detalles .cerrarAviso,
+.aviso-detalles-usuario .cerrarAviso-usuario{
 	cursor: pointer;
 	font-size: 24px;
 	position: absolute;
@@ -468,6 +482,41 @@
 	font-weight: 300;
 	line-height: 32px;
 	text-align: right;
+}
+
+/* Galeria de clasificados*/
+.clasificados-galeria {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.clasificados-galeria img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.clasificados-thumbs {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.clasificados-thumbs li {
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.clasificados-thumbs img {
+	height: 32px;
+	width: 32px;
+}
+
+.clasificados-thumbs li.selected {
+	opacity: 1 !important;
 }
 
 .area {
@@ -681,11 +730,46 @@
 
 }
 
+/* Politicas y procedimientos 2 */
+/*.barra-utilerias .busqueda {
+	position: relative;
+}*/
+
+.busqueda-campo .fa-search {
+	color: #CCB874;
+	font-size: 24px;
+	position: absolute;
+	top: 12px;
+	right: 30px;
+}
+
+.busqueda-campo .buscar {
+	background: transparent;
+	border-radius: 0;
+	box-sizing: border-box;
+	color: #FFF;
+	height: 50px;
+	width: 100%;
+	border: 1px solid #CCB874;
+}
+
+.busqueda-campo .buscar::placeholder {
+	color: #CCB874;
+	font-family: "Work Sans";
+	font-weight: 400;
+	opacity: 1;
+}
+
+
+
 /* Estilos del carrusel */
 
 .owl-carousel-menu {
+	opacity: 0;
 	padding: 0 100px;
 	position: relative;
+	-webkit-transition: opacity 2s; /* Safari prior 6.1 */
+  	transition: opacity 2s;
 }
 
 .owl-carousel-menu .owl-prev,
@@ -886,6 +970,10 @@
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 23px;
+}
+
+.lista-basica li a {
+	text-decoration: underline;
 }
 
 .lista-bulletXl {
@@ -1144,6 +1232,17 @@
 	line-height: 50px;
 }
 
+.formulario-xl label {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.formulario-xl label i {
+	color: #e2bc38;
+	font-style: 14px;
+}
+
 .formulario-xl .fa-stack.clasificados-icon {
 	font-size: 50px;
 	height: 50px;
@@ -1153,6 +1252,26 @@
 
 .formulario-xl .formulario-select .fas {
 	top: 18px;
+}
+
+.formulario-xl .custom-file-label{
+	background: transparent;
+	color: #CCB874;
+	cursor: pointer;
+	border-radius: 0;
+	border-color: #CCB874;
+	font-family: "Work Sans";
+	font-weight: 400;
+	height: 50px;
+	padding: 0 30px 0 16px;
+	line-height: 50px;
+}
+
+.formulario-xl .custom-file-label::after {
+	background: #CCB874;
+	color: #000;
+	height: 48px;
+	line-height: 35px;
 }
 
 .campo-blanco .fas,

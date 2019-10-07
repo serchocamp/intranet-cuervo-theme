@@ -97,6 +97,19 @@ $(document).ready(function(){
     
 });
 
+$(document).ready(function(){
+
+    $('.info-usuario').on('click', function (e) {
+      var contenedor = $(this).parents(".clasificado-parent");
+      contenedor.find(".aviso-detalles-usuario").slideDown();
+    })  
+
+    $('.cerrarAviso-usuario').on('click', function (e) {
+      $(this).parent().slideUp();
+    })
+    
+});
+
 
 /* Galeria de productos (Galleriffic) */
 jQuery(document).ready(function(e) {
