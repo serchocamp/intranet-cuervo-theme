@@ -52,17 +52,17 @@
 									<div id="personal" class="d-inline-block usuario"><@liferay.user_personal_bar /></div>
 									</#if>
 			                        
-			                        <form class="form-inline d-inline-block busqueda">
+			                        <div class="form-inline d-inline-block busqueda">
 			                        
 									 <#if !is_signed_in>
 									 <#else>
 
-									      <!--  <@liferay.search_bar />-->
+									       <@liferay.search_bar />
 											
 									  </#if>
 	
 
-			                        </form>
+			                       </div>
 			                    </div>
 			                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             		<i class="fas fa-bars"></i>                          
