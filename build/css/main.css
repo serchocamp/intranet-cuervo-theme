@@ -1,12 +1,12 @@
-@import url(estilos.css?t=1570633015715);
-@import url(lr-fix.css?t=1570633015715);
-@import url(grid-modificado.css?t=1570633015715);
-@import url(responsivo.css?t=1570633015715);
-@import url(font-awesome.all.min.css?t=1570633015715);
-@import url(owl.carousel.min.css?t=1570633015715);
-@import url(owl.theme.default.min.css?t=1570633015715);
-@import url(owl.theme.green.min.css?t=1570633015715);
-@import url(datatable.css?t=1570633015715);
+@import url(estilos.css?t=1570725775357);
+@import url(lr-fix.css?t=1570725775357);
+@import url(grid-modificado.css?t=1570725775357);
+@import url(responsivo.css?t=1570725775357);
+@import url(font-awesome.all.min.css?t=1570725775357);
+@import url(owl.carousel.min.css?t=1570725775357);
+@import url(owl.theme.default.min.css?t=1570725775357);
+@import url(owl.theme.green.min.css?t=1570725775357);
+@import url(datatable.css?t=1570725775357);
 .loadingmask-message {
   background: transparent;
   border-width: 0;
@@ -3274,5 +3274,24 @@ input.switch:empty ~ .switch-bar:after, input.switch:empty ~ .switch-bar:before,
   width: 242px;
   border: 1px solid #CCB874;
   margin-top: -5px; }
+
+/*  ---------------- scroll ------*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; }
 
 /*# sourceMappingURL=main.css.map */
