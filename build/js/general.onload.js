@@ -65,9 +65,16 @@ $(document).ready(function(){
 
 /* Oculta el menu hasta que se abra el dropdown */
 $(document).ready(function(){
+
   $('#collapseMarcas').on('shown.bs.collapse', function () {
     $('.owl-carousel-menu').css('opacity' , '1');
   });
+
+  $(".collapse[data-parent='#menuDesplegable']")
+    .on("show.bs.collapse", function(){
+      $(".collapse[data-parent='#menuDesplegable']").collapse('hide');
+    });
+    
 });
 
 /* SOMOS JOSE CUERVO */

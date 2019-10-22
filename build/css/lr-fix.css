@@ -38,3 +38,22 @@
 .facet-value a {
   color: #212529;
 }
+
+/* Ajuste del alto en los avisos del home a 12 columnas */
+.col-lg-12 .area-contenedor img {
+  height: 100%;
+  max-width: initial;
+}
+
+
+/* Se ajusta la imagen de los avisos de home a los alto */
+.portlet-journal-content .journal-content-article img, 
+.portlet-journal-content .journal-content-article .cke_widget_image {
+	height: 100%;
+	max-width: initial;
+}
+
+/* Se ajusta alto de las imagenes en los clasificados para que no se deformen */
+.clasificado-parent .cla {
+  height: auto !important;
+}
