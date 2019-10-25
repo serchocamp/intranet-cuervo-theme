@@ -158,7 +158,7 @@
 
 				            <#else>
 				            	<span ${nav_child_attr_selected} class="${nav_child_css_class} menu-item" id="layout_${nav_child.getLayoutId()}" role="presentation">
-									<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
+									<a target="_blank" aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
 										${nav_child.getName()}
 									</a>
 								</span>
