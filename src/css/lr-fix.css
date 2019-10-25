@@ -49,7 +49,6 @@
 /* Se ajusta la imagen de los avisos de home a los alto */
 .portlet-journal-content .journal-content-article img, 
 .portlet-journal-content .journal-content-article .cke_widget_image {
-	height: 100%;
 	max-width: initial;
 }
 
