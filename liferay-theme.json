@@ -1,11 +1,11 @@
 {
   "LiferayTheme": {
     "deploymentStrategy": "LocalAppServer",
-    "appServerPath": "C:\\liferay-dxp-7.2.10-ga1\\tomcat-9.0.17",
-    "deployPath": "C:\\liferay-dxp-7.2.10-ga1\\deploy",
+    "appServerPath": "C:\\Users\\consistent\\Downloads\\liferay-dxp-tomcat-7.2.10.1-sp1-20191009103614075\\liferay-dxp-7.2.10.1-sp1\\tomcat-9.0.17",
+    "deployPath": "C:\\Users\\consistent\\Downloads\\liferay-dxp-tomcat-7.2.10.1-sp1-20191009103614075\\liferay-dxp-7.2.10.1-sp1\\deploy",
     "url": "http://localhost:8080",
-    "appServerPathPlugin": "C:\\liferay-dxp-7.2.10-ga1\\tomcat-9.0.17\\webapps\\intranet-cuervo-theme",
-    "deployed": true,
+    "appServerPathPlugin": "C:\\Users\\consistent\\Downloads\\liferay-dxp-tomcat-7.2.10.1-sp1-20191009103614075\\liferay-dxp-7.2.10.1-sp1\\tomcat-9.0.17\\webapps\\intranet-cuervo-theme",
+    "deployed": false,
     "pluginName": "intranet-cuervo-theme"
   }
 }
