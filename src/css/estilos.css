@@ -212,7 +212,12 @@
 	line-height: 48px;
 }
 
-
+.menuDesplegable-container {
+    background: #181818;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
 /* Pie de página */
 
 .piePagina {
