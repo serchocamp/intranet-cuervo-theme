@@ -102,7 +102,7 @@
     </#if>
 
   	<#if nav_item.hasChildren()>
-
+  	 <div class="menuDesplegable-container">
   		<div class="container collapse" id="a${nav_item.getLayoutId()}" data-parent="#menuDesplegable">
             <div class="row mt-25 mb-50">
                 <div class="col-lg-10 offset-lg-1">
@@ -174,6 +174,7 @@
 	            </div>
             </div>
         </div>
+      </div>  
 
     </#if>
  </#list>
